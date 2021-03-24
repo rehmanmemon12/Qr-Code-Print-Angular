@@ -1,0 +1,19 @@
+
+<div id="print">
+  <h1>QR Code Genertor</h1>
+  <br>
+  <ngx-qrcode
+    [elementType]="elementType"
+    [errorCorrectionLevel]="correctionLevel"
+    [value]="value"
+    cssClass="bshadow">
+  </ngx-qrcode>
+</div>
+<br>
+<button printSectionId="print" ngxPrint >
+Print
+</button>
+
+
+<textarea [(ngModel)] = "value"></textarea>
+
